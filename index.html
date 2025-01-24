@@ -31,24 +31,23 @@
 
     <!-- Messaging for Web Deployment Script -->
         <script type='text/javascript'>
-            function initEmbeddedMessaging() {
-                try {
-                    embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-        
-                    embeddedservice_bootstrap.init(
-                        '00DHp00000DyYKa',
-                        'SDO_Messaging_for_Web',
-                        'https://brendanshe-241028-631-demo.my.site.com/ESWSDOMessagingforWeb1730130452279',
-                        {
-                            scrt2URL: 'https://brendanshe-241028-631-demo.my.salesforce-scrt.com'
-                        }
-                    );
-                } catch (err) {
-                    console.error('Error loading Embedded Messaging: ', err);
-                }
-            };
-        </script>
-        <script type='text/javascript' src='https://brendanshe-241028-631-demo.my.site.com/ESWSDOMessagingforWeb1730130452279/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-    <script src="chat.js"></script>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DHp00000DyYKa',
+				'Custom_Chat',
+				'https://brendanshe-241028-631-demo.my.site.com/ESWCustomChat1737749156547',
+				{
+					scrt2URL: 'https://brendanshe-241028-631-demo.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://brendanshe-241028-631-demo.my.site.com/ESWCustomChat1737749156547/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </body>
 </html> 
