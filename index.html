@@ -8,22 +8,22 @@
 </head>
 <body>
     <!-- Chat Launch Button -->
-    <div id="chat-launch-btn" class="chat-launch-button">
+    <!-- <div id="chat-launch-btn" class="chat-launch-button">
         <span class="chat-icon">💬</span>
         <span class="chat-text">Start Chat</span>
     </div>
 
     <!-- Chat Window Container -->
-    <div id="chat-window" class="chat-window hidden">
-        <div class="chat-header">
-            <div class="chat-title">Chat with us</div>
-            <button class="minimize-btn">_</button>
+    <!-- <div id="chat-window" class="chat-window hidden">
+       <div class="chat-header">
+           <div class="chat-title">Chat with us</div>
+           <button class="minimize-btn">_</button>
             <button class="close-btn">×</button>
-        </div>
+        <!-- </div>
         <div class="chat-messages" id="chat-messages">
             <!-- Messages will be dynamically inserted here -->
         </div>
-        <div class="chat-input-container">
+        <!-- <div class="chat-input-container">
             <textarea id="chat-input" placeholder="Type your message..."></textarea>
             <button id="send-message-btn">Send</button>
         </div>
@@ -31,24 +31,23 @@
 
     <!-- Messaging for Web Deployment Script -->
         <script type='text/javascript'>
-            function initEmbeddedMessaging() {
-                try {
-                    embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-        
-                    embeddedservice_bootstrap.init(
-                        '00DHp00000DyYKa',
-                        'SDO_Messaging_for_Web',
-                        'https://brendanshe-241028-631-demo.my.site.com/ESWSDOMessagingforWeb1730130452279',
-                        {
-                            scrt2URL: 'https://brendanshe-241028-631-demo.my.salesforce-scrt.com'
-                        }
-                    );
-                } catch (err) {
-                    console.error('Error loading Embedded Messaging: ', err);
-                }
-            };
-        </script>
-        <script type='text/javascript' src='https://brendanshe-241028-631-demo.my.site.com/ESWSDOMessagingforWeb1730130452279/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-    <script src="chat.js"></script>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DHp00000DyYKa',
+				'Custom_Chat',
+				'https://brendanshe-241028-631-demo.my.site.com/ESWCustomChat1737749156547',
+				{
+					scrt2URL: 'https://brendanshe-241028-631-demo.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://brendanshe-241028-631-demo.my.site.com/ESWCustomChat1737749156547/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </body>
 </html> 
