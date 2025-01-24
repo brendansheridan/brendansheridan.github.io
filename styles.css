@@ -1,4 +1,4 @@
-/* Chat Launch Button Styles */
+/* Chat Widget Styles */
 .chat-launch-button {
     position: fixed;
     bottom: 20px;
@@ -24,7 +24,6 @@
     font-size: 20px;
 }
 
-/* Chat Window Styles */
 .chat-window {
     position: fixed;
     bottom: 20px;
