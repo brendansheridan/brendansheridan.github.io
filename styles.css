@@ -1,0 +1,131 @@
+/* Chat Launch Button Styles */
+.chat-launch-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0070d2;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    z-index: 9998;
+}
+
+.chat-launch-button:hover {
+    transform: translateY(-2px);
+}
+
+.chat-icon {
+    font-size: 20px;
+}
+
+/* Chat Window Styles */
+.chat-window {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+.chat-window.hidden {
+    display: none;
+}
+
+.chat-header {
+    background: #0070d2;
+    color: white;
+    padding: 16px;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat-title {
+    font-weight: bold;
+}
+
+.minimize-btn,
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 4px 8px;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+}
+
+.chat-input-container {
+    padding: 16px;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    gap: 8px;
+}
+
+#chat-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    resize: none;
+    height: 40px;
+}
+
+#send-message-btn {
+    background: #0070d2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#send-message-btn:hover {
+    background: #005fb2;
+}
+
+/* Message Styles */
+.message {
+    margin-bottom: 12px;
+    max-width: 80%;
+}
+
+.message.agent {
+    margin-right: auto;
+}
+
+.message.visitor {
+    margin-left: auto;
+}
+
+.message-content {
+    padding: 8px 12px;
+    border-radius: 12px;
+}
+
+.agent .message-content {
+    background: #f3f3f3;
+}
+
+.visitor .message-content {
+    background: #0070d2;
+    color: white;
+} 
